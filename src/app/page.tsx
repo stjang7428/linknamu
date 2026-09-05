@@ -4,20 +4,41 @@ import type { LinkItem, Profile } from "@/types/link";
 
 const profile: Profile = {
   name: "장가이버",
-  bio: "바이브코딩 새싹",
-  avatarUrl: "/avatar-placeholder.svg",
+  bio: "바이브코딩 시작",
+  avatarUrl: "/장가이버프로필이미지.png",
 };
 
 const links: LinkItem[] = [
-  { id: "1", label: "GitHub", url: "https://github.com", clickCount: 0 },
-  { id: "2", label: "LinkedIn", url: "https://linkedin.com", clickCount: 0 },
-  { id: "3", label: "Blog", url: "https://example.com/blog", clickCount: 0 },
+  {
+    id: "0",
+    label: "🙋‍♂️ 장가이버 소개",
+    url: "image:/장가이버 소개.png",
+    clickCount: 0,
+  },
+  {
+    id: "1",
+    label: "🐙 GitHub",
+    url: "https://github.com/stjang7428/",
+    clickCount: 0,
+  },
+  {
+    id: "2",
+    label: "📘 Facebook",
+    url: "https://www.facebook.com/profile.php?id=61572114887603",
+    clickCount: 0,
+  },
+  {
+    id: "3",
+    label: "📧 Email",
+    url: "mailto:stjang7428@gmail.com",
+    clickCount: 0,
+  },
 ];
 
 export default function Home() {
   return (
-    <div className="flex flex-1 items-start justify-center bg-zinc-50 px-4 py-12 dark:bg-black sm:items-center">
-      <main className="flex w-full max-w-sm flex-col items-center gap-8 rounded-3xl border border-zinc-200 bg-white px-6 py-10 dark:border-zinc-800 dark:bg-zinc-950">
+    <div className="flex min-h-screen flex-1 items-center justify-center bg-gradient-to-b from-[#fff8ee] via-[#fdeee0] to-[#fbe0cc] px-6 py-16 sm:px-8">
+      <main className="flex w-full max-w-sm flex-col items-center gap-10">
         <ProfileHeader profile={profile} />
         <LinkList links={links} />
       </main>
