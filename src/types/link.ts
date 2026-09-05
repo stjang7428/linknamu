@@ -2,7 +2,6 @@ export type LinkItem = {
   id: string;
   label: string;
   url: string;
-  clickCount: number;
 };
 
 export type Profile = {

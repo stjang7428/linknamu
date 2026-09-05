@@ -13,25 +13,21 @@ const links: LinkItem[] = [
     id: "0",
     label: "🙋‍♂️ 장가이버 소개",
     url: "image:/장가이버 소개.png",
-    clickCount: 0,
   },
   {
     id: "1",
     label: "🐙 GitHub",
     url: "https://github.com/stjang7428/",
-    clickCount: 0,
   },
   {
     id: "2",
     label: "📘 Facebook",
     url: "https://www.facebook.com/profile.php?id=61572114887603",
-    clickCount: 0,
   },
   {
     id: "3",
     label: "📧 Email",
     url: "mailto:stjang7428@gmail.com",
-    clickCount: 0,
   },
 ];
 
